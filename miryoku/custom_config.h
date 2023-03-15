@@ -9,13 +9,13 @@
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
 U_MTL(LGUI, A),    U_MTL(LALT, R),    U_MTL(LCTRL, S),   U_MTL(LSHFT, T),   &kp G,             &kp M,             U_MTR(LSHFT, N),   U_MTR(LCTRL, E),   U_MTR(LALT, I),    U_MTR(LGUI, O),    \
 &kp Z,             U_MTL(RALT, X),    &kp C,             &kp D,             &kp V,             &kp K,             &kp H,             &kp COMMA,         U_MTR(RALT, DOT),  &kp SLASH,         \
-U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, TAB),  U_LT(U_MOUSE, RET),LBESC(U_SYM, 0),   U_LT(U_NUM, SPACE),LSK(U_FUN, LSHIFT),U_NP,              U_NP
+U_NP,              U_NP,              &kp ESC,           U_LT(U_NAV, TAB),  U_LT(U_MOUSE, RET),LBESC(U_SYM, 0),   U_LT(U_NUM, SPACE),&sk LSHIFT,        U_NP,              U_NP
 
 #define MIRYOKU_LAYER_EXTRA \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
 U_MTL(LGUI, A),    U_MTL(LALT, S),    U_MTL(LCTRL, D),   U_MTL(LSHFT, F),   &kp G,             &kp H,             U_MTR(LSHFT, J),   U_MTR(LCTRL, K),   U_MTR(LALT, L),    U_MTR(LGUI, SQT),  \
 &kp Z,             U_MTL(RALT, X),    &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         U_MTR(RALT, DOT),  &kp SLASH,         \
-U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, TAB),  U_LT(U_MOUSE, RET),LBESC(U_SYM, 0),   U_LT(U_NUM, SPACE),LSK(U_FUN, LSHIFT),U_NP,              U_NP
+U_NP,              U_NP,              &kp ESC,           U_LT(U_NAV, TAB),  U_LT(U_MOUSE, RET),LBESC(U_SYM, 0),   U_LT(U_NUM, SPACE),&sk LSHIFT,        U_NP,              U_NP
 
 #define MIRYOKU_LAYER_TAP \
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
@@ -48,16 +48,16 @@ U_NA,              &kp RALT,          &u_to_U_FUN,       &u_to_U_MEDIA,     U_NA
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp C_STOP,        &kp C_PP,          &kp C_MUTE,        U_NP,              U_NP
 
 #define MIRYOKU_LAYER_NUM \
-&kp LBKT,          &kp N7,            &kp N8,            &kp N9,            &kp RBKT,          U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
+U_NA,              &kp N7,            &kp N8,            &kp N9,            U_NA,              U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
 &kp SEMI,          &kp N4,            &kp N5,            &kp N6,            &kp EQUAL,         U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
 &kp GRAVE,         &kp N1,            &kp N2,            &kp N3,            &kp BSLH,          U_NA,              &u_to_U_NUM,       &u_to_U_NAV,       &kp RALT,          U_NA,              \
 U_NP,              U_NP,              &kp DOT,           &kp N0,            &kp MINUS,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_LAYER_SYM \
-&kp LBRC,          &kp AMPS,          &kp ASTRK,         &kp LPAR,          &kp RBRC,          U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
+U_NA,              &kp AMPS,          &kp ASTRK,         &kp LPAR,          U_NA,              U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
 &kp COLON,         &kp DLLR,          &kp PRCNT,         &kp CARET,         &kp PLUS,          U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
 &kp TILDE,         &kp EXCL,          &kp AT,            &kp HASH,          &kp PIPE,          U_NA,              &u_to_U_SYM,       &u_to_U_MOUSE,     &kp RALT,          U_NA,              \
-U_NP,              U_NP,              &kp LPAR,          &kp RPAR,          &kp UNDER,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+U_NP,              U_NP,              U_NA,              &kp RPAR,          &kp UNDER,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_LAYER_FUN \
 &kp F12,           &kp F7,            &kp F8,            &kp F9,            &kp PSCRN,         U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \

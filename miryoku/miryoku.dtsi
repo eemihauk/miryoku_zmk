@@ -10,6 +10,11 @@
 
 #include "miryoku.h"
 
+&sk {
+    release-after-ms = <2000>;
+    quick-release;
+};
+
 / {
   keymap {
     compatible = "zmk,keymap";
@@ -22,6 +27,8 @@ MIRYOKU_LAYER_LIST
 #undef MIRYOKU_X
   };
 };
+
+#include "custom_combos.dtsi"
 
 #include "miryoku_shift_functions.dtsi"
 
