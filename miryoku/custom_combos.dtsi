@@ -75,7 +75,7 @@
         plus {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <8 20>;
-            bindings = <&kp EQUAL>;
+            bindings = <&kp PLUS>;
             global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
         };
         bslh {
