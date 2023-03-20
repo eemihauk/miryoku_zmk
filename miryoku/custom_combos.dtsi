@@ -10,12 +10,7 @@
 / {
     combos {
         compatible = "zmk,combos";
-        undo {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <15 16>;
-            bindings = <U_UND>;
-            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
-        };
+        // Right hand horizontal
         lbrc {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <7 8>;
@@ -58,6 +53,7 @@
             bindings = <&u_caps_word>;
             global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
         };
+        // Right hand vertical
         minus {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <19 31>;
@@ -66,8 +62,57 @@
         };
         under {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <18 30>;
+            key-positions = <7 19>;
             bindings = <&kp UNDER>;
+            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+        };
+        equal {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <20 32>;
+            bindings = <&kp EQUAL>;
+            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+        };
+        plus {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <8 20>;
+            bindings = <&kp EQUAL>;
+            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+        };
+        bslh {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <21 33>;
+            bindings = <&kp BSLH>;
+            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+        };
+        pipe {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <9 21>;
+            bindings = <&kp PIPE>;
+            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+        };
+        // Left hand vertical
+        semi {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <4 16>;
+            bindings = <&kp SEMI>;
+            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+        };
+        colon {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 28>;
+            bindings = <&kp COLON>;
+            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+        };
+        tilde {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <3 15>;
+            bindings = <&kp TILDE>;
+            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+        };
+        grave {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <15 27>;
+            bindings = <&kp GRAVE>;
             global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
         };
     };
