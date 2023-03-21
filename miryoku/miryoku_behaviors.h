@@ -6,4 +6,3 @@
 #define U_MTL(MOD, TAP) &u_mtl MOD TAP
 #define U_MTR(MOD, TAP) &u_mtr MOD TAP
 #define U_LT(LAYER, TAP) &u_lt LAYER TAP
-#define LBESC(LAYER, NOT_USED) &lbesc LAYER NOT_USED
