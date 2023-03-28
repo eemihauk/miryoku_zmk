@@ -7,6 +7,60 @@
         ╰──────────╯ ╰──────────╯      */
 #define COMBO_TIMEOUT 25
 #define COMBO_GLOBAL_QUICK_TAP 75
+
+/ {
+    macros {
+        lower_ae: lower_ae {
+            label = "lower_ae";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LALT>
+                , <&macro_tap &kp A>
+                ;
+        };
+        upper_ae: upper_ae {
+            label = "upper_ae";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LALT>
+                , <&macro_press &kp LSHIFT>
+                , <&macro_tap &kp A>
+                , <&macro_release &kp LSHIFT>
+                ;
+        };
+        lower_oe: lower_oe {
+            label = "lower_oe";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LALT>
+                , <&macro_tap &kp O>
+                ;
+        };
+        upper_oe: upper_oe {
+            label = "upper_oe";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LALT>
+                , <&macro_press &kp LSHIFT>
+                , <&macro_tap &kp O>
+                , <&macro_release &kp LSHIFT>
+                ;
+        };
+    };
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -119,6 +173,18 @@
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <15 27>;
             bindings = <&kp GRAVE>;
+            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+        };
+        ae {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <13 25>;
+            bindings = <&ae>;
+            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+        };
+        oe {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <22 34>;
+            bindings = <&oe>;
             global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
         };
     };

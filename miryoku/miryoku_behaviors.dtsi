@@ -51,8 +51,22 @@
         compatible = "zmk,behavior-mod-morph";
         label = "delesc";
         #binding-cells = <0>;
-        bindings = <&kp DEL>, <&kp ESC>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
+        bindings = <&kp DEL>, <&kp ESC>;
+    };
+    ae: ae {
+        compatible = "zmk,behavior-mod-morph";
+        label = "ae";
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+        bindings = <&lower_ae>, <&upper_ae>;
+    };
+    oe: oe {
+        compatible = "zmk,behavior-mod-morph";
+        label = "oe";
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+        bindings = <&lower_oe>, <&upper_oe>;
     };
   };
 };
