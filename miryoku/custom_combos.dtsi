@@ -110,7 +110,7 @@
         // Right hand vertical
         sk_lshift {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <18 30>;
+            key-positions = <6 18>;
             bindings = <&sk LSHIFT>;
             global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
         };
