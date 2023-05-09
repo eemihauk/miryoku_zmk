@@ -64,42 +64,49 @@
 / {
     combos {
         compatible = "zmk,combos";
+
         // Right hand horizontal
         lbrc {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <7 8>;
             bindings = <&kp LBRC>;
             global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_BASE U_TAP>;
         };
         rbrc {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <8 9>;
             bindings = <&kp RBRC>;
             global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_BASE U_TAP>;
         };
         lpar {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <19 20>;
             bindings = <&kp LPAR>;
             global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_BASE U_TAP>;
         };
         rpar {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <20 21>;
             bindings = <&kp RPAR>;
             global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_BASE U_TAP>;
         };
         lbkt {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <31 32>;
             bindings = <&kp LBKT>;
             global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_BASE U_TAP>;
         };
         rbkt {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <32 33>;
             bindings = <&kp RBKT>;
             global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_BASE U_TAP>;
         };
         caps_word {
             timeout-ms = <COMBO_TIMEOUT>;
@@ -107,6 +114,23 @@
             bindings = <&u_caps_word>;
             global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
         };
+
+        // Left hand horizontal
+        tap_lgui {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <36 37>;
+            bindings = <&kp LGUI>;
+            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_TAP>;
+        };
+        tap_lalt {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <37 38>;
+            bindings = <&kp LALT>;
+            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_TAP>;
+        };
+
         // Right hand vertical
         sk_lshift {
             timeout-ms = <COMBO_TIMEOUT>;
@@ -119,73 +143,107 @@
             key-positions = <19 31>;
             bindings = <&kp MINUS>;
             global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_BASE U_TAP>;
         };
         under {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <7 19>;
             bindings = <&kp UNDER>;
             global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_BASE U_TAP>;
         };
         equal {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <20 32>;
             bindings = <&kp EQUAL>;
             global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_BASE U_TAP>;
         };
         plus {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <8 20>;
             bindings = <&kp PLUS>;
             global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_BASE U_TAP>;
         };
         bslh {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <21 33>;
             bindings = <&kp BSLH>;
             global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_BASE U_TAP>;
         };
         pipe {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <9 21>;
             bindings = <&kp PIPE>;
             global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
-        };
-        // Left hand vertical
-        colon {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <4 16>;
-            bindings = <&kp COLON>;
-            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
-        };
-        semi {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <16 28>;
-            bindings = <&kp SEMI>;
-            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
-        };
-        tilde {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <3 15>;
-            bindings = <&kp TILDE>;
-            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
-        };
-        grave {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <15 27>;
-            bindings = <&kp GRAVE>;
-            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
-        };
-        ae {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <13 25>;
-            bindings = <&ae>;
-            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_BASE U_TAP>;
         };
         oe {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <22 34>;
             bindings = <&oe>;
             global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_BASE>;
+        };
+
+        // Left hand vertical
+        colon {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <4 16>;
+            bindings = <&kp COLON>;
+            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_BASE U_TAP>;
+        };
+        semi {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 28>;
+            bindings = <&kp SEMI>;
+            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_BASE U_TAP>;
+        };
+        tilde {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <3 15>;
+            bindings = <&kp TILDE>;
+            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_BASE U_TAP>;
+        };
+        grave {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <15 27>;
+            bindings = <&kp GRAVE>;
+            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_BASE U_TAP>;
+        };
+        ae {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <13 25>;
+            bindings = <&ae>;
+            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_BASE>;
+        };
+        tap_tab {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <5 17>;
+            bindings = <&kp TAB>;
+            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_TAP>;
+        };
+        tap_ret {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <17 29>;
+            bindings = <&kp RET>;
+            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_TAP>;
+        };
+        tap_esc {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <1 13>;
+            bindings = <&kp ESC>;
+            global-quick-tap-ms = <COMBO_GLOBAL_QUICK_TAP>;
+            layers = <U_TAP>;
         };
     };
 };
